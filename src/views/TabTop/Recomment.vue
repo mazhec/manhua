@@ -29,16 +29,18 @@ export default {
   },
   methods: {
     getBanner() {
+      console.log('getBanner')
       //请求
       this.axios
-        .get("http://localhost:3000/banner/all")
+        .get("banner/all")
         .then(response => {
           //当请求成功才会触发
+          console.log('banner/all', response);
           this.banners = response.data;
         })
         .catch(error => {
           // 当请求发生错误，就触发catch，打印出error报错信息
-          console.log(error);
+          console.log('banner/all', error);
         })
         .then(() => {
           // 这代码段不管请求是否成功，都会执行
@@ -47,10 +49,11 @@ export default {
     getRecommendList() {
       //请求
       this.axios
-        .get("http://localhost:3000/recommend/all")
+        .get("recommend/all")
         .then(response => {
           //当请求成功才会触发
           this.recommendList = response.data;
+          console.log(response.data)
         })
         .catch(error => {
           // 当请求发生错误，就触发catch，打印出error报错信息

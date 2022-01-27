@@ -103,6 +103,7 @@ export default {
 .recomment-item-img {
   width: 40%;
   border-radius: 3px;
+  height: 50%;
 }
 .recomment-item-content {
   flex: 1;
@@ -113,9 +114,10 @@ export default {
 }
 .recomment-item-content-box p {
   margin-bottom: 2px;
+  font-size: 15px;
 }
 .recomment-item-content-box span {
-  font-size: 10px;
+  font-size: 12px;
   color: #a1a3a6;
 }
 .recomment-item-content-bottom {
@@ -125,7 +127,7 @@ export default {
   margin-top: 8px;
 }
 .recomment-item-content-bottom span {
-  font-size: 9px;
+  font-size: 12px;
   color: #a1a3a6;
 }
 </style>

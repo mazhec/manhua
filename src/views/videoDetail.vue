@@ -93,6 +93,7 @@ export default {
           // this.commentList = response.data
           // console.log(response.data[0].videoSrc)
           this.activeVideo.URL = response.data[0].videoSrc
+          console.log(this.activeVideo.URL)
         })
         .catch(error => {
           // 当请求发生错误，就触发catch，打印出error报错信息
